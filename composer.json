@@ -1,5 +1,5 @@
 {
-    "name": "crakmedia/cron-tracker-component",
+    "name": "crakmedia/exchangerates-component",
     "description": "Tracker Component",
     "autoload": {
         "psr-0": {
