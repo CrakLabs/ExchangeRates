@@ -1,0 +1,22 @@
+{
+    "name": "crakmedia/cron-tracker-component",
+    "description": "Tracker Component",
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "crakmedia/datasourcebalancer-component": ">=1.0.0,<2.0.0",
+        "crakmedia/cache-component": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=3.7.0"
+    },
+    "repositories": [
+        {"type": "vcs", "url": "ssh://git@stash.crakmedia.lan:7999/components/datasourcebalancer.git"},
+        {"type": "vcs", "url": "ssh://git@stash.crakmedia.lan:7999/components/cache.git"}
+    ]
+}
+
