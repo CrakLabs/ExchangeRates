@@ -3,7 +3,7 @@
     "description": "Tracker Component",
     "autoload": {
         "psr-0": {
-            "": "src"
+            "Crak\\Component\\ExchangeRates": "src"
         }
     },
     "require": {
@@ -15,8 +15,14 @@
         "phpunit/phpunit": ">=3.7.0"
     },
     "repositories": [
-        {"type": "vcs", "url": "ssh://git@stash.crakmedia.lan:7999/components/datasourcebalancer.git"},
-        {"type": "vcs", "url": "ssh://git@stash.crakmedia.lan:7999/components/cache.git"}
+        {
+            "type": "vcs",
+            "url": "ssh://git@stash.crakmedia.lan:7999/components/datasourcebalancer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@stash.crakmedia.lan:7999/components/cache.git"
+        }
     ]
 }
 

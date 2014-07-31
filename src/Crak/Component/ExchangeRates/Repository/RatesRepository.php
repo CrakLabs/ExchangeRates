@@ -6,13 +6,24 @@
 
 namespace Crak\Component\ExchangeRates\Repository;
 
-
 /**
  * Interface RatesRepository
  * @package Crak\Bundle\CronBundle\Repository
  */
 interface RatesRepository
 {
-    public function getRates(\DateTime $date = null);
-    public function saveRates(\DateTime $date, $rates);
+    /**
+     * @param \DateTime $date
+     *
+     * @return array
+     */
+    public function getRates(\DateTime $date);
+
+    /**
+     * @param \DateTime $date
+     * @param array     $rates
+     *
+     * @return bool
+     */
+    public function saveRates(\DateTime $date, array $rates);
 }
