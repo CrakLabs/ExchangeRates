@@ -89,7 +89,7 @@ class IMFRepository implements RatesRepository
 
             $record = preg_replace('/\t+/', "\t", $record);
             $fields = str_getcsv($record, "\t", '"', '\\');
-            if (!empty($fields[0])) {
+            if (!empty($fields[0]) && is_numeric($fields[1])) {
                 $countries[$fields[0]] = !empty($countries[$fields[0]]) ? $countries[$fields[0]] : $fields[0];
                 $rates[$countries[$fields[0]]] = $fields[1];
             }
