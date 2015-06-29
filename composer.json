@@ -1,7 +1,6 @@
 {
     "name": "crakmedia/exchangerates-component",
-    "description": "Tracker Component",
-    "version": "1.0.1",
+    "description": "Exchange rate Component",
     "autoload": {
         "psr-0": {
             "Crak\\Component\\ExchangeRates": "src"
