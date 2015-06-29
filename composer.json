@@ -9,7 +9,6 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "crakmedia/datasourcebalancer-component": ">=1.0.0,<2.0.0",
         "crakmedia/cache-component": "~1.0"
     },
     "require-dev": {

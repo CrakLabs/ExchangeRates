@@ -6,7 +6,7 @@
 
 namespace Crak\Component\ExchangeRates;
 
-use Crak\Component\ExchangeRates\Repository\DatabaseRepository;
+use Crak\Component\ExchangeRates\Repository\PDORepository;
 use Crak\Component\ExchangeRates\Repository\RatesRepository;
 
 /**
@@ -41,7 +41,7 @@ class ExchangeRates
         }
 
         $rates = $this->repository->getRates($date);
-        if (empty($rates) && $this->repository instanceof DatabaseRepository) {
+        if (empty($rates) && $this->repository instanceof PDORepository) {
             $repository = new Repository\IMFRepository();
             $rates = $repository->getRates($date);
             $this->repository->saveRates($date, $rates);
