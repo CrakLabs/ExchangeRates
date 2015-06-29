@@ -8,17 +8,10 @@
         }
     },
     "require": {
-        "php": ">=5.4.0",
-        "crakmedia/cache-component": "~1.0"
+        "php": ">=5.4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://apackagist.crakmedia.lan:1280"
-        }
-    ]
+    }
 }
 

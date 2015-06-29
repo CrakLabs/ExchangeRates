@@ -114,10 +114,13 @@ class ExchangeRatesTest extends \PHPUnit_Framework_TestCase
             ->willReturn([]);
 
         $this->db
-            ->expects($this->exactly(2))
+            ->expects($this->exactly(1))
             ->method('query')
             ->willReturn($statement);
 
+        $this->db
+            ->expects($this->exactly(1))
+            ->method('exec');
 
         $repository = new PDORepository($this->db, $this->table);
         $exchangeRate = new ExchangeRates($repository);
